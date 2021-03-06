@@ -5,12 +5,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import static com.efimchick.ifmo.collections.countwords.WordsConstants.MIN_COUNTER;
+import static com.efimchick.ifmo.collections.countwords.WordsConstants.MIN_LENGTH;
+import static com.efimchick.ifmo.collections.countwords.WordsConstants.NOT_ALPHABETIC_CHAR;
+import static com.efimchick.ifmo.collections.countwords.WordsConstants.SPACE;
+import static com.efimchick.ifmo.collections.countwords.WordsConstants.SPACES;
+
 public class Words {
-    private static final String SPACES = "\\s+";
-    private static final int MIN_LENGTH = 4;
-    private static final int MIN_COUNTER = 10;
-    private static final String NOT_ALPHABETIC_CHAR = "[^a-zA-Zа-яА-Я]";
-    private static final String SPACE = " ";
+
 
     public String countWords(List<String> lines) {
         StringBuilder stringBuilder = new StringBuilder();
